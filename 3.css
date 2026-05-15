@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    color: #fff;
+    font-family: 'montserrat', sans-serif;
+    background: #1d1d1d;
+}
+
+header {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px #fff;
+    position: sticky;
+    top: 0;
+    background: #1d1d1d;
+}
+
+header a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+#grid { 
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.photo p {
+    text-align: center;
+}
+
+.mob_icon {
+    display: none;
+}
+
+.mob_icon img{
+    width: 100%;
+}
+
+.tablet_icon {
+    display: none;
+}
+
+#a_n_p {
+    position: fixed;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(29, 29, 29, .5);
+    display: none;
+}
+
+#a_n_p.open {
+    display: flex;
+}
+
+#a_n_p div {
+    width: 80%;
+    border: 2px solid #1d1d1d;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+#a_n_p input {
+    padding: .5rem;
+    font-family: 'montserrat', sans-serif;
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#a_n_p button {
+    font-family: 'montserrat', sans-serif;
+    padding: .5rem;
+}
+
+#a_n_p input.error {
+    border-color: red;
+}
+#a_n_p button {
+    font-family: "Momo Trust Display", sans-serif;
+    padding: .5rem;
+}
+#popup_photo {
+    position: fixed;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(29,29,29, .5);
+    display: none;
+}
+#popup_photo.open {
+    display: flex;
+}
+#popup_photo img {
+    max-width: 90%;
+    max-height:90%;
+}
+#a_n_p.open { display: flex; }
